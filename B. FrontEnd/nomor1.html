@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOMOR 1 B</title>
+</head>
+<body>
+    <h2>FORM DATA</h2>
+    <form>
+        <label for="">Nama :</label>
+        <input type="text" id="nama">
+    </form>
+    <br>
+    <button type="submit" onclick="pesan()">SUBMIT</button>
+
+    <p id="pesan"></p>
+
+    <script>
+        // document.addEventListener("click", pesan)
+        function pesan(){
+            let nama = document.getElementById("nama").value
+            // document.getElementById("pesan").innerHTML("Selamat Datang" + nama)
+            
+            let pesan = document.getElementById("pesan")
+            pesan.textContent = "Selamat Datang " + nama + "!"
+        }
+        
+    </script>
+</body>
+</html>

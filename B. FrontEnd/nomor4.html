@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        JavaScript CRUD Operation
+    </title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+ <h1><center>JavaScript CRUD Operation</center></h1>
+ <hr>
+   <div class="data-form">
+      <form onsubmit="event.preventDefault();FormSubmit();">
+          <div>
+              <label>Name*</label>
+              <label class="validation-error hide" id="nameValidationError">This field is required.</label>
+              <input type="text" name="name" id="name">
+          </div>
+          <div>
+              <label>Email</label>
+              <input type="text" name="email" id="email">
+          </div>
+          <div>
+              <label>Salary</label>
+              <input type="text" name="salary" id="salary">
+          </div>
+          <div>
+              <label>Country</label>
+              <input type="text" name="country" id="country">
+          </div>
+          <div  class="form-buttons">
+              <input type="submit" value="Submit">
+          </div>
+      </form>
+  </div>
+  <br/>
+  <div class = "data-table">
+    <table class="list" id="dataList">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Salary</th>
+                <th>Country</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+
+        </tbody>
+    </table>
+   </div>
+   <script src="script.js"></script>
+</body>
+</html>
